@@ -25,8 +25,5 @@ r_dir_file(hal_audio_default, mnt_vendor_file)
 allow hal_audio_default sysfs_wake_lock:file { open read write };
 allow hal_audio_default hal_audio_default:capability2 { block_suspend };
 
-allow hal_audio_default hal_dms_hwservice:hwservice_manager find;
-binder_call(hal_audio_default, hal_dms_default)
-
 # Allow hal_audio_default to read and write to diag_device
 allow hal_audio_default diag_device:chr_file { ioctl read write getattr open };
