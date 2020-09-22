@@ -539,4 +539,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_BOOT_JARS += \
     WfdCommon
 
+# Floko
+TARGET_HAS_FOD := true
+
 #$(call inherit-product, vendor/opengapps/build/opengapps-packages.mk)
